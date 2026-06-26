@@ -1,7 +1,7 @@
 {
   "name": "api-fox",
   "version": "1.0.0",
-  "description": "StellarAid Backend is the server-side API powering the StellarAid crowdfunding platform — a blockchain‑enabled system built on the Stellar network to support transparent, secure, and efficient fundraising for social impact initiatives.",
+  "description": "StellarAid Backend is the server-side API powering the StellarAid crowdfunding platform \u2014 a blockchain\u2011enabled system built on the Stellar network to support transparent, secure, and efficient fundraising for social impact initiatives.",
   "main": "index.js",
   "scripts": {
     "test": "jest",
@@ -9,9 +9,9 @@
     "lint": "eslint src/",
     "lint:fix": "eslint src/ --fix",
     "format": "prettier --write \"src/**/*.{js,json,md}\"",
-    "build": "echo \"No build required for Node.js project\"",
-    "dev": "nodemon src/server.js",
-    "start": "node src/server.js"
+    "build": "node init && echo \"No build required for Node.js project\"",
+    "dev": "node init && nodemon src/server.js",
+    "start": "node init && node src/server.js"
   },
   "repository": {
     "type": "git",
